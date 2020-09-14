@@ -30,6 +30,8 @@
   
   <modules>
     <module>kevinluo-service-framework</module>
+    <module>kevinluo-governance-server</module>
+    <module>kevinluo-governance-client</module>
   </modules>
   
   <parent>
