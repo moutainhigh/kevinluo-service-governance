@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+out
+*.lnk
+.idea
+*.iml
+target
+.gradle
+build
+*.log
+.project
+.classpath
+.settings
+*.tmp
+~$*.docx
+.vs
+Debug
+applog
+
+###日志生成文件
+LOG_HOME_IS_UNDEFINED
+var
