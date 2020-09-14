@@ -104,15 +104,16 @@
       <version>${jakarta.version}</version>
     </dependency>
   
+    <dependency>
+      <groupId>com.kevinluo</groupId>
+      <artifactId>kevinluo-service-framework</artifactId>
+      <version>v1.0.0</version>
+    </dependency>
+  
   </dependencies>
   
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>com.kevinluo</groupId>
-        <artifactId>kevinluo-service-framework</artifactId>
-        <version>V1.0.0</version>
-      </dependency>
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
