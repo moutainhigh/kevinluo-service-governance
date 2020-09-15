@@ -11,4 +11,12 @@
   
   <artifactId>kevinluo-governance-server</artifactId>
 
+  <dependencies>
+    <dependency>
+      <groupId>com.kevinluo</groupId>
+      <artifactId>kevinluo-service-framework</artifactId>
+      <version>v1.0.0</version>
+    </dependency>
+  </dependencies>
+
 </project>
