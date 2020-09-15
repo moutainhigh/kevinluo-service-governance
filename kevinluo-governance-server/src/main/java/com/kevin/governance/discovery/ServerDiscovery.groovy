@@ -1,12 +1,6 @@
 package com.kevin.governance.discovery
 
 import com.kevin.governance.Configuration
-import com.kevinluo.storage.framework.logging.LogFactory
-import io.netty.bootstrap.ServerBootstrap
-import io.netty.channel.ChannelFuture
-import io.netty.channel.ChannelOption
-import io.netty.channel.nio.NioEventLoopGroup
-import io.netty.channel.socket.nio.NioServerSocketChannel
 
 /* ************************************************************************
  *
@@ -30,6 +24,12 @@ import io.netty.channel.socket.nio.NioServerSocketChannel
  * Creates on 2020/9/15..
  */
 
+import com.kevinluo.storage.framework.logging.LogFactory
+import io.netty.bootstrap.ServerBootstrap
+import io.netty.channel.ChannelFuture
+import io.netty.channel.ChannelOption
+import io.netty.channel.nio.NioEventLoopGroup
+import io.netty.channel.socket.nio.NioServerSocketChannel
 
 /**
  * @author kevin
@@ -42,6 +42,7 @@ class ServerDiscovery
    */
   private static final def port = Configuration.getPort()
 
+  /** 记录日志输出 **/
   private static def LOG = LogFactory.getLog(ServerDiscovery.class)
 
   /**
