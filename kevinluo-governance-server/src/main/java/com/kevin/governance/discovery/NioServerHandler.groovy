@@ -1,5 +1,8 @@
 package com.kevin.governance.discovery
 
+import io.netty.channel.ChannelHandlerContext
+import io.netty.channel.SimpleChannelInboundHandler
+
 /* ************************************************************************
  *
  * Copyright (C) 2020 tiansheng All rights reserved.
@@ -19,34 +22,19 @@ package com.kevin.governance.discovery
  * ************************************************************************/
 
 /*
- * Creates on 2019/11/13.
+ * Creates on 2020/9/15..
  */
 
-import io.netty.channel.ChannelHandler
-import io.netty.channel.ChannelHandlerContext
 
 /**
- * @author lts
+ * @author kevin
  */
-class ListenerHandler implements ChannelHandler
+class NioServerHandler extends SimpleChannelInboundHandler<Object>
 {
 
   @Override
-  void handlerAdded(ChannelHandlerContext channelHandlerContext) throws Exception
+  protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception
   {
-    println "接收到来自${channelHandlerContext.name()}"
+    println msg
   }
-
-  @Override
-  void handlerRemoved(ChannelHandlerContext channelHandlerContext) throws Exception
-  {
-    System.out.println()
-  }
-
-  @Override
-  void exceptionCaught(ChannelHandlerContext channelHandlerContext, Throwable throwable) throws Exception
-  {
-    System.out.println()
-  }
-
 }

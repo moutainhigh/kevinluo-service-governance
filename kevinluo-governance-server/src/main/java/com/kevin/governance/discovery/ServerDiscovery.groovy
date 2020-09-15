@@ -62,7 +62,7 @@ class ServerDiscovery
     // 保持长连接
     .childOption(ChannelOption.SO_KEEPALIVE, true)
     // 绑定客户端连接时触发的操作
-    .childHandler(new ListenerHandler())
+    .childHandler(new ServerChannelInit())
 
     // 绑定监听端口，使用sync同步阻塞方法等待绑定操作完成
     ChannelFuture future = bootstrap.bind(port).sync()
